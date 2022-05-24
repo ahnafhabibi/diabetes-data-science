@@ -8,35 +8,35 @@ col1, col2, col3 = st.columns(3)
 
 # getting user inputgender = col1.selectbox("Enter your gender",["Male", "Female"])
 
-polydipsia=col3.selectbox("Do you drink a lot of water and still become thristy?",["Yes","No"])
+polydipsia=col3.selectbox("Do you drink a lot of water and still become thristy?",["Yes","No"],index=1)
 
-age = col2.number_input("Enter your age")
+age = col2.number_input("Enter your age",value=48)
 
-polyuria = col1.selectbox("Do you excrete excessive urine?",["Yes","No"])
+polyuria = col1.selectbox("Do you excrete excessive urine?",["Yes","No"],index=1)
 
-sudden_weight_loss= col1.selectbox("Have you experienced sudden weight loss?",["Yes","No"])
+sudden_weight_loss= col1.selectbox("Have you experienced sudden weight loss?",["Yes","No"],index=1)
 
-weakness= col2.selectbox("Do you feel physically weak?",["Yes","No"])
+weakness= col2.selectbox("Do you feel physically weak?",["Yes","No"],index=1)
 
-polyphagia=col3.selectbox("Do you consume food that exceeds your regular calorie count?",["Yes","No"])
+polyphagia=col3.selectbox("Do you consume food that exceeds your regular calorie count?",["Yes","No"],index=1)
 
-genital_thrush= col1.selectbox("Do you have an infection in your private area?",["Yes","No"])
+genital_thrush= col1.selectbox("Do you have an infection in your private area?",["Yes","No"],index=1)
 
-blurry_vision=col2.selectbox("Do you have blurry vision?",["Yes","No"])
+blurry_vision=col2.selectbox("Do you have blurry vision?",["Yes","No"],index=1)
 
-itching=col3.selectbox("Do you have itching skin?",["Yes","No"])
+itching=col3.selectbox("Do you have itching skin?",["Yes","No"],index=1)
 
-irritability= col1.selectbox("Do you feel irritable quite easily?",["Yes","No"])
+irritability= col1.selectbox("Do you feel irritable quite easily?",["Yes","No"],index=1)
 
-delayed_healing=col2.selectbox("Does your wound delay to heal?",["Yes","No"])
+delayed_healing=col2.selectbox("Does your wound delay to heal?",["Yes","No"],index=1)
 
-partial_paresis=col3.selectbox("Do you partial weakening of a muscle  or group of muscles?",["Yes","No"])
+partial_paresis=col3.selectbox("Do you partial weakening of a muscle  or group of muscles?",["Yes","No"],index=1)
 
-muscle_stiffness=col1.selectbox("Do you have face muscle stiffness after exercise or physical labour?",["Yes","No"])
+muscle_stiffness=col1.selectbox("Do you have face muscle stiffness after exercise or physical labour?",["Yes","No"],index=1)
 
-alopecia=col2.selectbox("Do you have hairlosses often in clumps and shape of a quarter?",["Yes","No"])
+alopecia=col2.selectbox("Do you have hairlosses often in clumps and shape of a quarter?",["Yes","No"],index=1)
 
-obese=col3.selectbox("Are you obese?",["Yes","No"])
+obese=col3.selectbox("Are you obese?",["Yes","No"],index=1)
 
 
 df_pred = pd.DataFrame([[age, gender, polyuria,polydipsia, sudden_weight_loss,
