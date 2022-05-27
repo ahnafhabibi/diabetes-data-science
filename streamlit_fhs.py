@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
-st.write("# Diabetics Prediction")
+st.write("# Early Stage Diabetics Prediction")
 
 gender = st.selectbox("Enter your gender",["Male", "Female"])
 col1, col2, col3 = st.columns(3)

@@ -15,9 +15,9 @@ diabetics=pd.read_csv("diabetes_data_upload.csv")
 female=diabetics[diabetics["Gender"]=='Female']
 male=diabetics[diabetics["Gender"]=='Male']
 from sklearn.model_selection import train_test_split
-female_train, female_test = train_test_split(female, test_size=0.15,random_state=1)
+female_train, female_test = train_test_split(female, test_size=0.20,random_state=1)
 from sklearn.model_selection import train_test_split
-male_train, male_test = train_test_split(male, test_size=0.10,random_state=1)
+male_train, male_test = train_test_split(male, test_size=0.20,random_state=1)
 diabetics_train=pd.concat([male_train,female_train])
 diabetics_train=diabetics_train.reset_index()
 diabetics_test=pd.concat([male_test,female_test])
