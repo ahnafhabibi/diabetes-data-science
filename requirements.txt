@@ -5,3 +5,4 @@ sklearn
 plotly
 joblib
 mixed_naive_bayes
+typing_extensions
